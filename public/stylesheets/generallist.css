@@ -1,0 +1,38 @@
+
+#generallistTable{
+    background-color: var(--table-background);
+    width: 87%;
+    margin: auto;
+    line-height: 0px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#generallistTable .padding_head{
+    padding:10px;
+}
+#generallistTable .text_size{
+    font-size: 13px;
+
+}
+#generallistTable .padding_list{
+    padding-left: 10px;
+}
+#generallistTable .text-sizeHeading{
+    font-size: 15px;
+}
+#generallistTable .heading_background{
+    background-color: var(--top-banner-background);
+}
+/* #generallistTable .table_li{
+    padding: 16px;
+    line-height: 10px;
+    text-align: justify;
+} */
+#generallistTable .table_gli{
+    line-height: 17px;
+    text-align: justify;
+    padding: 0 0 10px;
+}
+#generallistTable .padding6{
+    padding: 10px;
+}

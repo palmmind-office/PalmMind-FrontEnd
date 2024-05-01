@@ -1,0 +1,35 @@
+@media (max-width: 426px){
+    #frame .content .messages ul li p{
+        max-width: 75vw !important;
+    }
+    #frame #sidepanel{
+        display: block;
+        width: 100% !important;
+        flex-shrink: 0;
+    }
+    #frame .content{
+        display: none;
+        width: 100% !important;
+        flex-shrink: 0;
+    }
+    #frame .content .messages{
+        min-height: calc(100% - 165px) !important;
+        max-height: calc(100% - 165px) !important;
+    }
+    #header{
+        flex-direction: column;
+        gap: 8px;
+        height: max-content !important;
+        padding: 8px 15px !important;
+    }
+    #header #header-info-container{
+        border-bottom: 1px solid #eee;
+        padding-bottom: 4px;
+    }
+    #header #header-buttons-container{
+        justify-content: start !important;
+    }
+    .toggle-sidebar{
+        display: inline !important;
+    }
+}

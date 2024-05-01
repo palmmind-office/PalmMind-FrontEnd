@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap");
+
+#mainIntroPageID {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 999999999999;
+}
+
+#mainIntroPageID #subIntroContainerId {
+    height: 100%;
+    border-radius: 19px;
+    border-top-right-radius: 19px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#mainIntroPageID #subIntroContainerId .digitalLogo {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px 20px 0px;
+}
+
+#mainIntroPageID #subIntroContainerId .digitalLogo img {
+    width: 50%;
+}
+
+#mainIntroPageID #subIntroContainerId .botBanner img {
+    width: 80%;
+    left: 10%;
+    position: relative;
+}
+
+#mainIntroPageID #subIntroContainerId .botDesc {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    left: 15%;
+    color: #1C3D78;
+    font-weight: 600;
+}
+
+#mainIntroPageID #subIntroContainerId .startMessageButton {
+    background-color: #1C77BB;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    margin: 10px auto;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-weight: 600;
+}

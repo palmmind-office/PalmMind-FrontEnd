@@ -1,0 +1,29 @@
+extends baseEmail 
+
+block content
+ p Dear Team,
+ p #{full_name} has given #{type} through Chatbot. Request you to once check from your side.
+
+    case type 
+        when 'feedback'
+            br
+            | #[strong Full Name:] #{full_name}
+            br
+            | #[strong Email:] #{email_address}
+            br
+            | #[strong Mobile:] #{mobile_number}
+            br
+            | #[strong Suggestion:] #{suggestion}
+            
+        when 'complain'
+            br
+            |#[strong Title:] #{title}
+            br
+            | #[strong Full Name:] #{full_name}
+            br
+            | #[strong Email:] #{email_address}
+            br
+            | #[strong Mobile:] #{mobile_number}
+            br
+            | #[strong Problem:] #{problem}
+            

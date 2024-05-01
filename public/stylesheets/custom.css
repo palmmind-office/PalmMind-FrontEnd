@@ -1,0 +1,36 @@
+:root {
+  --topnav-header: #2678AA !important;
+  --footer: transparent;
+
+  --messageSection1: linear-gradient(to right, #2678AA 0%, rgba(249, 155, 40, 1) 100%);
+  --messageSection: #F4F4F4;
+  --contents: #2678AA;
+
+  --buttons-background: #2678AA;
+  --buttons: #2678AA;
+  --buttons-color: #FEFEFE;
+
+  --homeslider-background: #f8f8f8;
+  --homeslider-contents-background: rgba(255, 255, 255, 0.5);
+
+  --userReply: #fffefe;
+  --userReply-color: #272727;
+
+  --Sent-li: #021632;
+  --Sent-li-color: #f8f8f8;
+
+  --white: #FEFEFE;
+  --text-color: #272727;
+
+  --buttonslider-li: #f58f25;
+  --homesliderbanner-btn: #daedeb;
+
+  --ratting-color: #f68c23;
+  --callbackActionButton: #aaa;
+  --outerDiv-mainbtn: #2678AA;
+
+  --banner-background: #1C77BB;
+  --top-banner-background: #1C77BB;
+  --table-background: #D0D3D4;
+  --popupBackground: #FDFEFE
+}

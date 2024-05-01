@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Chat</title>
+
+  <!-- for multiple file selection -->
+
+  <link rel="stylesheet" href="assets/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+  <link rel="stylesheet" href="assets/owl.carousel.min.css" />
+  <link href="assets/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="assets/mobiscroll.css" />
+  <link rel="stylesheet" href="stylesheets/responsive.css" />
+  <link rel="stylesheet" href="stylesheets/animation.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic" />
+  <!-- fontAwesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link for nepali date picker  -->
+  <!-- <link rel="stylesheet" href="assets/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="stylesheets/neplai-date-picker.css">
+  <link rel="stylesheet" href="assets//datetime.picker.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+<body id="botinitialised">
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <div id="outer-wrapper">
+    <div id="frame">
+
+      <!-- loadingicon when not rendering -->
+      <div class="InsideMessageLoading"
+        style=" position: absolute; top: 50%; z-index: 1000;left: 0; right: 0;text-align: center; ">
+        <p>Please Wait ...</p>
+        <img src="./images/embed/loading.gif" alt="Loading..." width="60" height="60">
+
+      </div>
+
+      <div class="content">
+        <div class="contact-profile" id="contact-profile-module">
+          <p class="font_century" style="display: flex;">
+            <img class='botBannerCompanyLogo' src="images/menu/logo.png" alt="Loading...">
+          </p>
+          <p style="margin-top:20px;margin-left:46px;"> Your Virtual Assistant</p>
+        </div>
+        <!-- <button id="pushNotification" data-toggle="modal" data-target="#exampleModalLong">
+          <i class="fa fa-bell" data-toggle="tooltip" title="Notification"></i>
+        </button> -->
+        <!-- <div id="offerID" style="position:absolute;top:-18px;right:30px;cursor:pointer;"><img src="images/menu/offer1.gif" style="width:80px;height:80px;"/></div>
+        <div id="active_agents_display" style="position: relative;"></div> -->
+        <span id="palm">
+          <!-- <span id="active_agents"><i class="fa fa-user-circle-o" data-toggle="tooltip" title="Active Agents" style="font-size: 1.2rem !important; cursor: pointer"></i></span> -->
+          <a href="#" id="palmmind_web">Developed by palmmind </a>
+        </span>
+        <div class="messages" id="message-module">
+          <div class="message-section">
+            <ul style="list-style: none;">
+              <li class="replies"></li>
+              <li class="sent"></li>
+            </ul>
+          </div>
+          <img id="imgPreview">
+          <ul class="list-group" id="autosuggest"></ul>
+        </div>
+        <div class="message-input" id="message-input-module" style="display: flex; flex-direction:column;">
+
+          <div class="wrap">
+            <span id="errorinputtext">* Special Characters not allowed.</span>
+
+            <!-- input field for nepali and english field -->
+            <div style="display: flex; align-items:center;width: calc(100% - 100px);">
+              <input type="text" id="search1" placeholder="Type your query..." autocomplete="off" />
+              <span id="new-message-file-input-filename" style="font-size: 11px;color: black;font-weight: bold;"></span>
+            </div>
+            <!-- <input type="text" id="search1" placeholder="Type your query..." autocomplete="off" /> -->
+
+            <input type="file" hidden id="new-message-file-upload-input" multiple />
+            <button id="new-message-file-upload-button" style="background:none;width:35px;">
+              <img class="add-file-icon" src="images/embed/file.png"
+                style="width: 25px;height: 25px;padding-right:1px!important;" />
+              <img class="remove-file-icon" src="images/embed/delete.png"
+                style="width: 25px;height: 25px;padding-right:1px!important; display: none;" />
+            </button>
+            <!-- <i class="fas fa-microphone-slash microphone-element microphone" style="font-size: 18px;margin: auto;
+                padding: 9px 5px 0px 8px; color: #1C77BB;background: #ffffff;
+                margin: 0;" id="getSpeech"></i> -->
+                <div id="mainRecordDiv">
+                  <div id="recordingBar"></div>
+                  <img id="audioSend" src="images/embed/check.png" style="width: 30px;height: 30px;position:absolute;top:10px;right:10px;z-index:1;" />
+                  <img id="audioClear" src="images/embed/clear.png" style="width: 30px;height: 30px;z-index:1;" />
+                </div>
+                
+                <button id="audioMessage" style="background:unset;">
+                  <img src="images/embed/microphone.png" style="width: 22px;height: 22px" />
+                </button>
+                <!-- end of audio embed -->
+            <button class="submit">
+              <img src="images/menu/paper-plane.png" style="width: 30px;height: 30px;padding-right:3px!important;" />
+            </button>
+          </div>
+          <div id="minimenu">
+            <div class="gridMiniMenu">
+              <button id="context">
+                <span class="tooltiptext" style="left: 0;">Menu</span>
+                <img id="click" src="images/embed/menu.png" alt="Menu">
+                <label style="color:#ffffff;">Menu</label>
+              </button>
+              <button class="contextMenu" id="menuAgent">
+                <span class="tooltiptext" style="left:80px;top: -8px;">Talk to Live Agent</span>
+                <img id="click" src="images/embed/liveagent.png" alt="Agent">
+                <label style="color:#ffffff;">Chat</label>
+              </button>
+              <button class="contextMenu" id="menuBook">
+                <span class="tooltiptext" style="left:162px; ">Book a Demo</span>
+                <img id="click" src="images/embed/registration.png" alt="Book">
+                <label style="color:#ffffff;">Demo</label>
+              </button>
+              <button class="contextMenu" id="menuJob">
+                <span class="tooltiptext" style="right: 80px;">Jobs</span>
+                <img id="click" src="images/embed/job.png" alt="Jobs">
+                <label style="color:#ffffff;">Jobs</label>
+              </button>
+              <button class="contextMenu" id="menuContact">
+                <span class="tooltiptext" style="right: 0">Contact Us</span>
+                <img id="click" src="images/embed/contact.png" alt="Contact">
+                <label style="color:#ffffff;">Contact</label>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <script type="text/javascript" src="assets/client.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <!-- cdn link for proper min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <!-- linking main.js file -->
+    <script type="text/javascript" src="./bundle/bot.bundle.js"></script>
+
+    <script type="text/javascript" src="assets/owl.carousel.min.js"></script>
+    <script src="assets/notify.min.js"></script>
+    <script src="assets/select2.min.js"></script>
+    <script type="text/javascript" src="assets/mobiscroll.js"></script>
+
+    <script type="text/javascript" src="assets/mdb.min.js"></script>
+
+    <script type="text/javascript" src="assets/jquery.MultiFile.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/pouchdb-7.1.1.min.js"></script> -->
+
+    <!-- neplai date picker  -->
+    <script type="text/javascript" src="assets/nepali-date-picker.js"></script>
+    <script type="text/javascript" src="assets/datetime.picker.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+</body>
+
+</html>

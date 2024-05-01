@@ -1,0 +1,90 @@
+#recommendationslider {
+    margin: 15px;
+    margin-top: 0px;
+    width: 330px;
+    animation: opactyeaseoute;
+    animation-duration: 2.7s;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#recommendationslider .slide-container {
+    width: 100%;
+    height: 145px;
+    margin: 0 auto;
+    border: 2px solid #ececec;
+    border-radius: 10px;
+}
+
+#recommendationslider .slide-container img {
+width: 100%;
+height: 100px;
+padding: 5px;
+object-fit: scale-down;
+}
+
+
+#recommendationslider .slide-container p {
+font-size: 10px;
+font-weight: 800;
+margin: 0;
+color: #0171bb;
+text-align: center;
+}
+#recommendationslider .slide-container span {
+font-size: 12px;
+font-weight: 800;
+margin: 0;
+color: black;
+text-align: center;
+}
+
+#recommendationslider .slide-container .button-container {
+display: flex;
+flex-direction: column;
+background: var(--white);
+color: #123034;
+border-bottom: 1px solid #ccc6c6;
+border-left: 1px solid #ccc6c6;
+}
+
+#recommendationslider .slide-container button {
+display: block;
+cursor: pointer;
+width: 90%;
+margin: 5px auto;
+padding: 5px;
+border: none;
+outline: none;
+border-radius: 10px;
+background: var(--buttons-background);
+color: var(--buttons-color);
+}
+
+#recommendationslider .slide-container button:last-child {
+margin-bottom: 10px;
+}
+
+#recommendationslider .slide-container button:hover {
+box-shadow: 2px 2px 6px var(--text-color);
+}
+
+
+#recommendationslider .owl-nav button {
+    width: 1.4rem;
+    height: 2rem;
+    border-radius: 10%;
+    background: #00000052;
+  }
+  
+  #recommendationslider .owl-nav button:hover {
+    background: #0171bb !important;
+  }
+
+#recommendationslider .owl-theme .owl-nav {
+    margin-top: 10px;
+  }
+#recommendationslider .owl-theme .owl-nav button span {
+    font-size: 20px;
+  }

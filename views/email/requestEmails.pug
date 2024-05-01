@@ -1,0 +1,51 @@
+extends baseEmail
+
+block content
+    p Dear Team,
+    p #[strong #{subject}] has been requested through Chatbot. Please follow back.
+
+    case user
+        when 'agent'
+            br
+            | #[strong Agent Code:] #{agentCode}
+            br
+            | #[strong Agent Name:] #{agentName}
+        when 'policy'
+            br
+            | #[strong Policy Number:] #{policyNo}
+            br
+            | #[strong Policy Holder Name:] #{policyHolderName}
+
+    br
+    | #[strong Mobile Number:] #{mobileNo}
+   
+
+    case type
+        when 'NomineeChangeRequest'
+            br
+            | #[strong Nominee Name:] #{nomineeName}
+            br
+            | #[strong Requested Nominee Name:] #{requestedValue}
+        when 'OccupationChangeRequest'
+            br
+            | #[strong Previous Occupation:] #{previousOccupation}
+            br
+            | #[strong Requested Occupation:] #{requestedValue}
+        when 'MobileNumberChange'
+            br
+            | #[strong Requested Mobile Number:] #{requestedValue}
+        when 'PaymodeChangeRequest'
+            br
+            | #[strong Pay Mode:] #{payMode}
+            br
+            | #[strong Requested Pay Mode:] #{requestedValue}
+        when 'PanNumberUpdateRequest'
+            br
+            | #[strong Previous PAN Number:] #{previousPanNo}
+            br
+            | #[strong Requested PAN Number:] #{requestedValue}
+        when 'BankAccountChangeRequest'
+            br
+            | #[strong Previous Bank Account Number:] #{previousBankAccountNumber}
+            br 
+            | #[strong Requested Bank Account number:] #{requestedValue}

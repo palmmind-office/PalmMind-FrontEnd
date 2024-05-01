@@ -1,0 +1,11 @@
+extends baseEmail
+
+block content
+    p Dear Team,
+    p #[strong #{fullName}] is interested on our plan.
+    p #[strong Company Name:] #{companyName}
+    p #[strong Contact Person/Designation:] #{fullName}, #{designation}
+    p #[strong Interested Plan:] #{product}
+    p #[strong Mobile Number:] #{mobileNumber}
+    p #[strong Mail:] #{emailAddress || "Not Provided"} 
+    p Thank You.

@@ -1,0 +1,28 @@
+#productCategory {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    padding-top: 0px;
+    column-gap: 2rem;
+
+}
+
+#productCategory .singleContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-self: center;
+    background: #1C77BB;
+    cursor: pointer;
+}
+
+#productCategory .singleContainer img {
+    width: 100%;
+}
+
+#productCategory .singleContainer p {
+    background: #1C77BB;
+    font-size: 14px;
+}

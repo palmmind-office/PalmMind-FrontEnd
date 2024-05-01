@@ -1,0 +1,8 @@
+# For posting form data to googlesheet 
+- Create project in google cloud console
+- Enable google sheet api (Api & services)
+- Create service account (Credentials > Create Credentials)
+- Create keys and client email containing json (clicking 3 dots next to service account)
+- private key and client email addition in .env 
+- addition of google sheet id in .env (https://docs.google.com/spreadsheets/d/**googlesheetid**/edit#gid=0)
+- give access to the client email from the google sheet 

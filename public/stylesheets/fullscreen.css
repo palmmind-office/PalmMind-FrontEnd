@@ -1,0 +1,169 @@
+#outer-wrapper {
+    width: 100%;
+}
+
+#frame {
+    border-radius: unset;
+}
+
+#frame .content {
+    border-radius: unset;
+}
+
+#frame .content .messages ul li p {
+    max-width: 100vh;
+}
+
+#quick_reply {
+    text-align: unset;
+}
+
+#quick_reply ul {
+    margin: 0rem 3.5rem !important;
+    padding: 0 0px 0 0px;
+}
+
+#previousButton {
+    width: 20%;
+    display: block;
+    padding: 4px !important;
+    margin: 1rem 3.8rem;
+    background-color: #1C77BB;
+    margin-bottom: 2.8rem;
+}
+
+.btn-primary {
+    border-radius: 20px !important;
+    background: #1C77BB;
+    border: none;
+}
+
+/* intro */
+
+#mainIntroPageID {
+    width: 100%;
+    background: #fff;
+}
+
+
+#mainIntroPageID #subIntroContainerId {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: unset;
+    width: 60%;
+    justify-content: center;
+}
+
+#mainIntroPageID #banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: unset;
+    width: 60%;
+}
+
+#mainIntroPageID #subIntroContainerId .botDesc {
+    left: unset;
+}
+
+
+
+
+
+/* Hamburger */
+
+#menu-container {
+    border-radius: unset;
+}
+
+#offerImage {
+    width: 220px;
+}
+
+
+#descriptionContainer {
+    border-radius: unset;
+    margin-top: 45px;
+}
+
+.submenu-container-c {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
+    grid-gap: 5px;
+    margin: 70px;
+}
+
+/* contact module */
+
+#contactmodule {
+    width: 50%;
+}
+
+.detailcontainer {
+    width: 50%;
+    max-width: 50%;
+    right: 15%;
+}
+
+#detailDrawer {
+    width: 415px;
+}
+
+#detailDrawer .owl-carousel .owl-stage-outer {
+    margin-left: 40px;
+}
+
+#detailDrawer .slide-container {
+    background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgb(249 249 249) 35%, rgb(232 239 255) 100%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0px 5px;
+}
+
+@media only screen and (max-width : 700px) {
+
+    #quick_reply ul {
+        margin: 0rem auto !important;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #previousButton {
+        margin: 1rem auto;
+        width: 30%;
+        margin-bottom: 2.8rem;
+    }
+
+    .submenu-container-c {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 3fr));
+        margin: 40px;
+        margin-right: -15px;
+    }
+
+    #mainIntroPageID #subIntroContainerId {
+        width: 100%;
+    }
+
+    #mainIntroPageID #banner {
+        width: 100%;
+    }
+
+    #contactmodule {
+        width: 100%;
+        margin: 0px;
+    }
+
+    #detailDrawer .slide-container {
+        width: 60%;
+        margin: 0px;
+    }
+
+    .detailcontainer {
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        top: 0%;
+    }
+}

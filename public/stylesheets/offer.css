@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.offer {
+    border-style: solid;
+    border-color: #1D69B1;
+    border-bottom-left-radius: 18px;
+    overflow-y: scroll;
+    /* scrollbar-base-color: #1D69B1; */
+
+    scrollbar-color: inherit;
+    border-right-style: hidden;
+    margin-bottom: 50px;
+}
+
+.subOffer {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; */
+    /* box-shadow: 6px 6px 6px 6px #898080; */
+    /* box-shadow: 1px -1px 5px 0px #948787;
+    border-radius: 21px;
+    margin: 10px 16px; */
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    /* box-shadow: 6px 6px 6px 6px #898080; */
+    box-shadow: 1px -1px 5px 0px #948787;
+    border-radius: 21px;
+    margin: 20px 16px;
+    height: 156px;
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    color: #1D69B1;
+}
+
+.descDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 12px;
+    /* background-color: red; */
+    width: 50%;
+
+}
+
+.offerTitle {
+    text-align: center;
+    position: relative;
+    color: #E40F1B;
+    font-size: 12px;
+}
+
+.discount {
+    position: relative;
+    /* margin-top: 31px; */
+    /* top: 20px; */
+    color: #1D69B1;
+    word-break: break-all;
+    text-align: center;
+    /* top: 6px; */
+    /* padding: 2px; */
+    margin: 0 8px;
+    bottom: 6px;
+}
+
+.btns {
+    position: relative;
+    background-color: #EC811E !important;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* .imgs{
+    width: 175px;
+} */
+
+.imgs {
+    height: 156px;
+    width: 202px;
+    border-radius-top: 59px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+::-webkit-scrollbar {
+
+    -webkit-appearance: none;
+    width: 8px;
+    background-color: lightgrey;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1C77BB;
+    height: 10px;
+}

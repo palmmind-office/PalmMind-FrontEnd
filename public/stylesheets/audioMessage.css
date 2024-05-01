@@ -1,0 +1,24 @@
+
+#mainRecordDiv{
+    display: none;
+    gap: 1rem;
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    background: rgb(234, 234, 234);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 120px;
+}
+
+#recordingBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #848484c1;
+    transition: width 1s linear;
+}

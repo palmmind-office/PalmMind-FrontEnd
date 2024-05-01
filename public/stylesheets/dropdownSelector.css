@@ -1,0 +1,33 @@
+#dropdownSelector {
+    margin: -10px 30px 20px 40px;
+
+}
+
+#dropdownSelector .selector-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+#dropdownSelector .selector-card select {
+    font-size: 12px;
+}
+
+#dropdownSelector .searchIcon {
+    padding: 5px;
+    background: #1C77BB;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 95%;
+    margin-bottom: -10px;
+
+}
+
+#dropdownSelector .searchIcon img {
+    width: 20px !important;
+}

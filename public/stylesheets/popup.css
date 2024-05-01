@@ -1,0 +1,78 @@
+@import url('./custom.css');
+
+#popupContainer{
+    z-index: 99999;
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    display: none;
+    /* padding: 20px; */
+    /* box-shadow: 0px 2px 0.9px #0B4CA2; */
+}
+#popupContainer .popupBackground{
+    background-color: var(--popupBackground);
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #0B4CA2;
+}
+
+#popupContainer .form-group.floating>label {
+    bottom: 29px;
+    left: 15px;
+    position: relative;
+    padding: 0px 5px 0px 5px;
+    font-size: 1.1em;
+    transition: 0.1s;
+    pointer-events: none;
+    background-color: var(--popupBackground);
+    font-weight: 500 !important;
+    transform-origin: bottom left;
+}
+#popupContainer .form-group{
+    font-size: 11px;
+    /* margin-bottom: 5px; */
+}
+
+#popupContainer .form-control.floating:focus~label{
+    transform: translate(1px,-85%) scale(1);
+    opacity: 1;
+    color: #000000;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+}
+
+#popupContainer .form-control.floating:valid~label{
+    transform-origin: bottom left;
+    transform: translate(1px,-85%) scale(0.80);
+    opacity: 1;
+}
+#popupContainer .form-group input{
+    border: 1px solid #EB5B2D;
+    border-radius: 20px;
+    padding: 6px 38px;
+    background: var(--popupBackground);
+    color: rgb(2, 0, 0);
+    box-shadow: none;
+}
+
+#popupContainer button{
+    border: 1px solid #EB5B2D;
+    border-radius: 20px;
+    padding: 6px 12px;
+    background: var(--popupBackground);
+    color: rgb(2, 0, 0);
+    box-shadow: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#popupContainer button:hover{
+        color: #fff;
+        background: #0B4CA2;
+}
+#popupContainer .popup_error{
+    color: red;
+    margin-left: 20px;
+    margin-top: -14px;
+}

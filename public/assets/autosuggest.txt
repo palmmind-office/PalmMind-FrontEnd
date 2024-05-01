@@ -1,0 +1,51 @@
+menu
+contact
+may i know where your organization is located?
+i need your location details please
+are you available on digital platform
+how can i contact you?
+how can i call you?
+When will office begin?
+Please tell me the office opening time.
+business hours
+Can I use cold water for all types of laundry?
+Can I wash different types of fabrics together?
+How can I improve the washing machine's efficiency?
+troubleshooting for showcase chiller
+products
+what are the products you have
+how can i place order online
+help me with placing order online
+please tell me how can i place the order 
+Can I order from outside the country?
+i live abroad can i place an order for my family back home
+i am currently residing in Australia can i place my order
+price of your products
+Can I register a second-hand product?
+Is it necessary to register my product, and if so, where?
+How long do I have to register my product after purchase?
+when should i register my product after i have made a purchase
+its already been two years i have bought my [washing machine](product) can i register my product now?
+what do i need to register a warranty card
+Can I register my product through email or phone?
+I'm having trouble finding the product registration option. What should I do?
+Do I need the product's serial number for registration?
+Can I register multiple products at once?
+Is there a fee for product registration?
+Can I register a product if I live in a different country?
+Is there an expiration date for product registration?
+What are the benefits of product registration?
+What information is typically required for product registration?
+How can I check if my product is already registered?
+How do I know that my order is confirmed?
+when will i know if my order has been confirmed?
+how can i know my order is confirmed or not?
+tell me if my order has confirmed?
+I regret my purchase. Can I cancel the order?
+Please assist me in canceling my order.
+I need to cancel my order due to some unforeseen circumstances.
+Can you cancel my order and issue a refund?
+I want to cancel my order before it gets shipped.
+i want to cancel the order and get my money back
+cancel the order and return my money 
+cancel my order and refund my cash back

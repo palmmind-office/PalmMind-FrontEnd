@@ -1,0 +1,36 @@
+.select2,
+.select2-container,
+.select2-container--default,
+.select2-container--above,
+.select2-container--focus,
+.select2-container,
+.select2-container--default,
+.select2-container--open {
+    width: 288px !important;
+    margin: auto !important;
+    display: block !important;
+    border: unset !important;
+    background: #fff !important;
+    margin-bottom: 4px !important;
+    z-index: 999999;
+    font-size: 12px !important;
+    margin-top: 7px!important;
+    margin-bottom: 7px !important;
+}
+
+.select2-container--open {
+    position: relative;
+    top: 295px !important;
+
+}
+
+.select2-dropdown,
+.select2-dropdown--above {
+    border: unset !important;
+    margin-left: -25px !important;
+    width: 330px !important;
+}
+
+.select2-container .select2-selection--single {
+    border: unset !important;
+}

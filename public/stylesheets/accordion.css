@@ -1,0 +1,112 @@
+#accordionModule {
+    position: fixed;
+    background: #ffffff;
+    right: 2px;
+    height: 80vh;
+    overflow-y: scroll;
+    width: 365px;
+    padding: 14px;
+    overflow-x: hidden;
+    /* border: 2px solid #3b9fb8; */
+    animation: fadeInLeft1 0.5s ease-in both;
+    margin: 20px;
+}
+
+#accordionModule .accordionCard {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+
+#accordionModule .accordionCard .backGround_list {
+    margin-top: -20px !important;
+}
+
+#accordionModule .accordionCard .panel-group .panel {
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+#accordionModule .accordionCard .panel .panel-heading {
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+#accordionModule .accordionCard .panel-heading a {
+    color: #fff !important;
+    display: block;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    /* font-weight: 600; */
+    background-color: #1C77BB;
+    position: relative;
+    color: #fff;
+    box-shadow: none;
+    transition: all 0.1s ease 0;
+    width: 106%;
+    /* font-size: 15px; */
+    text-align: start;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#accordionModule .accordionCard .bodysec .panel-body ul li {
+    list-style: none;
+}
+
+#accordionModule .accordionCard .panel-heading .panel-title a[aria-expanded="false"]:after {
+    content: "\002B";
+    font-family: FontAwesome;
+    text-align: center;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #fff;
+    background-color: #1C77BB;
+    border: 5px solid #fff;
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    line-height: 22px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+
+#accordionModule .accordionCard .panel-heading .panel-title a[aria-expanded="true"]:after {
+    content: "\2212";
+    font-family: FontAwesome;
+    text-align: center;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #fff;
+    background-color: #1C77BB;
+    border: 5px solid #fff;
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+    line-height: 22px;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+
+
+#accordionModule .accordionCard #accordion .panel-body {
+    background-color: #1C77BB;
+    color: #fff;
+    line-height: 21px;
+    border-top: none;
+    font-size: 12px;
+    position: relative;
+    padding: 3px 35px;
+
+}

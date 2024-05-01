@@ -1,0 +1,230 @@
+[
+  {
+  "intents": "i want to change mode of premium",
+  "payload": "i want to change mode of premium"
+  },
+  {
+  "intents": "what are the requirements to change the mode of premium",
+  "payload": "what are the requirements to change the mode of premium"
+  },
+  {
+  "intents": "change premium mode",
+  "payload": "change premium mode"
+  },
+  {
+  "intents": "i have to change mode of my premium",
+  "payload": "i have to change mode of my premium"
+  },
+  {
+  "intents": "i want to change my occupation",
+  "payload": "i want to change my occupation"
+  },
+  {
+  "intents": "need to change my occupation",
+  "payload": "need to change my occupation"
+  },
+  {
+  "intents": "requirements to change the policy",
+  "payload": "requirements to change the policy"
+  },
+  {
+  "intents": "what are the requirements to change the policy",
+  "payload": "what are the requirements to change the policy"
+  },
+  {
+  "intents": "i want to revive policy",
+  "payload": "i want to revive policy"
+  },
+  {
+  "intents": "how can i renew my old policy",
+  "payload": "how can i renew my old policy"
+  },
+  {
+  "intents": "what can i do to renew the old policy",
+  "payload": "what can i do to renew the old policy"
+  },
+  {
+  "intents": "change nominee",
+  "payload": "change nominee"
+  },
+  {
+  "intents": "change my nominee",
+  "payload": "change my nominee"
+  },
+  {
+  "intents": "want to change my policy",
+  "payload": "want to change my policy"
+  },
+  {
+  "intents": "what should i do change policy",
+  "payload": "what should i do change policy"
+  },
+  {
+  "intents": "best way to change nominee",
+  "payload": "best way to change nominee"
+  },
+  {
+  "intents": "what is process for tax certificate",
+  "payload": "what is process for tax certificate"
+  },
+  {
+  "intents": "i want to change my mobile number",
+  "payload": "i want to change my mobile number"
+  },
+  {
+  "intents": "i want to see my transaction histroy",
+  "payload": "i want to see my transaction histroy"
+  },
+  {
+  "intents": "i want to see my policy due",
+  "payload": "i want to see my policy due"
+  },
+  {
+  "intents": "policy due",
+  "payload": "policy due"
+  },
+  {
+  "intents": "i want to know the interest of my policy",
+  "payload": "i want to know the interest of my policy"
+  },
+  {
+  "intents": "what are the steps to know premium due",
+  "payload": "what are the steps to know premium due"
+  },
+  {
+  "intents": "i have premium i want to know my premium due",
+  "payload": "i have premium i want to know my premium due"
+  },
+  {
+  "intents": "what is the demand of tax certificate",
+  "payload": "what is the demand of tax certificate"
+  },
+  {
+  "intents": "why tax certificate is important",
+  "payload": "why tax certificate is important"
+  },
+  {
+  "intents": "want to know revival period",
+  "payload": "want to know revival period"
+  },
+  {
+  "intents": "what can be done to renew lapsed policy",
+  "payload": "what can be done to renew lapsed policy"
+  },
+  {
+  "intents": "all products",
+  "payload": "all products"
+  },
+  {
+  "intents": "can you show me the list of your branch",
+  "payload": "can you show me the list of your branch"
+  },
+  {
+  "intents": "branches",
+  "payload": "branches"
+  },
+  {
+  "intents": "nearest bracnch to me",
+  "payload": "nearest bracnch to me"
+  },
+  {
+  "intents": "agent details",
+  "payload": "agent details"
+  },
+  {
+  "intents": "i want to see my agency details",
+  "payload": "i want to see my agency details"
+  },
+  {
+  "intents": "update agent bank name",
+  "payload": "update agent bank name"
+  },
+  {
+  "intents": "help me to update agent bank account number",
+  "payload": "help me to update agent bank account number"
+  },
+  {
+  "intents": "i am agent want to see due of policy for renew",
+  "payload": "i am agent want to see due of policy for renew"
+  },
+  {
+  "intents": "renew policy due",
+  "payload": "renew policy due"
+  },
+  {
+  "intents": "what is the commission of policy i issued",
+  "payload": "what is the commission of policy i issued"
+  },
+  {
+  "intents": "what is the process to become agent",
+  "payload": "what is the process to become agent"
+  },
+  {
+  "intents": "i am agent how can i update my pan number",
+  "payload": "i am agent how can i update my pan number"
+  },
+  {
+  "intents": "i am your agent how can i change my pan number",
+  "payload": "i am your agent how can i change my pan number"
+  },
+  {
+  "intents": "plz help me to update my pan number",
+  "payload": "plz help me to update my pan number"
+  },
+  {
+  "intents": "what are the process to claim",
+  "payload": "what are the process to claim"
+  },
+  {
+  "intents": "i want to claim",
+  "payload": "i want to claim"
+  },
+  {
+  "intents": "requirements to claim",
+  "payload": "requirements to claim"
+  },
+  {
+  "intents": "way to claim",
+  "payload": "way to claim"
+  },
+  {
+  "intents": "i want to do payment plz give me bank details",
+  "payload": "i want to do payment plz give me bank details"
+  },
+  {
+  "intents": "i want bank details for payment",
+  "payload": "i want bank details for payment"
+  },
+  {
+  "intents": "what are the bank in which i can pay",
+  "payload": "what are the bank in which i can pay"
+  },
+  {
+  "intents": "list of the bank where payment can be done",
+  "payload": "list of the bank where payment can be done"
+  },
+  {
+  "intents": "name of the bank where i can pay",
+  "payload": "name of the bank where i can pay"
+  },
+  {
+  "intents": "bank details for payment",
+  "payload": "bank details for payment"
+  },
+  {
+  "intents": "interested to pay display bank details",
+  "payload": "interested to pay display bank details"
+  },
+  {
+  "intents": "i have to pay bank detials plz",
+  "payload": "i have to pay bank detials plz"
+  },
+  {
+  "intents": "bank details to pay",
+  "payload": "bank details to pay"
+  },
+  {
+  "intents": "need to pay give me bank details",
+  "payload": "need to pay give me bank details"
+  }
+  ]
